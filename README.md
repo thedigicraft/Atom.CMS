@@ -1,7 +1,8 @@
-atomCMS
-=======
+AtomCMS
+=========================
 
-The Digital Craft AtomCMS
+Preface
+-------------------------
 
 This is the repository for The Digital Craft's AtomCMS from the Developing a Dynamic Website from Start to Finish series.
 
