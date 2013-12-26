@@ -1,13 +1,14 @@
 <?php
-// Template Functions
+## Template Functions
 
-
+// Display the Page's Header:
 function head() {
 
 	echo '<h1>ATOM.CMS</h1>';
 	
 }
 
+// Display the Page's Main Navigation:
 function nav_main() {
 
 	echo '
@@ -21,17 +22,14 @@ function nav_main() {
 		</ul>
 		
 	';	
-
 	
 }
 
+// Display the Page's Footer:
 function footer() {
 
 	echo '<p>Copyright Dynamic Sites LLC 2012</p>';
 	
 }
-
-
-
 
 ?>
