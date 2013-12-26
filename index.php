@@ -31,7 +31,7 @@ include('config/setup.php');
 	    ?>    
         </div><!-- END content -->
     
-    	<div class="clear"></div>
+        <div class="clear"></div>
     
         <div class="footer"><?php footer(); ?></div><!-- END footer -->
         
