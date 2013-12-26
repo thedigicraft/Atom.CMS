@@ -3,7 +3,7 @@
 
 // host(or location of the database), username, password, database name
 
-$dbc = mysqli_connect('localhost', 'study_dev', 'website1', 'study_dynamic') OR die ('Could not connect to the datebase because: ' . mysqli_connect_error() );
+$dbc = mysqli_connect('localhost', 'yourusername', 'yourpassword', 'yourdatabasename') OR die ('Could not connect to the datebase because: ' . mysqli_connect_error() );
 
 
 include('functions/sandbox.php');
