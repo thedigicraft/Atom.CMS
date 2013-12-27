@@ -39,10 +39,10 @@
         
         ?>
     
-    </ul>
+    </ul><!-- END nav_side -->
 
 
-</div>
+</div><!-- END col sidebar -->
 
 <div class="col editor">
 
@@ -103,9 +103,6 @@
             <input type="hidden" name="id" value="<?php echo $opened['id'] ?>">
         </table>
         
-    </form>
+    </form><!-- END form -->
 
-	
-
-
-</div>
+</div><!-- END col editor -->

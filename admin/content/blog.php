@@ -1,6 +1,4 @@
-<?php ## Blog Manager ?>
-
-<?php
+<?php ## Blog Manager 
 
 	if (isset($_POST['submitted']) == 1) {
 
@@ -41,10 +39,10 @@
         
         ?>
     
-    </ul>
+    </ul><!-- END nav_side -->
 
 
-</div>
+</div><!-- END col sidebar -->
 
 <div class="col editor">
 
@@ -103,9 +101,9 @@
                 <input type="hidden" name="submitted" value="1">
                 <input type="hidden" name="id" value="<?php echo $opened['id'] ?>">
         	</table>
-        </form>
+        </form><!-- END form -->
 
 	<?php  ?>
 
 
-</div>
+</div><!-- END col editor -->
