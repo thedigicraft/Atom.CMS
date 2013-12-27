@@ -1,18 +1,19 @@
-AtomCMS - Original
+AtomCMS
 =========================
 
-Preface
--------------------------
 
-This branch is the original version of the AtomCMS from the first video series "Building a Dynamic Website from Start to Finish".  
+This is the repository for The Digital Craft's AtomCMS from the Developing a Dynamic Website from Start to Finish series.
 
-A completely new version will be started in 2014 along with a new video series.
+Original Branch:
+----------------
+The Original branch is for the first set of videos which had ended premature.  
 
-This repository DOES NOT include the Redactor WYSIWYG plugin.  We do not own the plugin and it is used in our CMS for example purposes.
+To switch the the Original Branch [click here] (https://github.com/thedigicraft/atomCMS/tree/original)
 
-To download a copy of Redactor please visit their website
-[download Redactor] (http://imperavi.com/redactor/)
+What's New
+----------
+We will be creating a brand new version and new set of videos in 2014.  
 
 Thanks!
-Alan
-The Digital Craft
+
+[Alan] (https://github.com/thedigicraft)

@@ -25,13 +25,13 @@ include('config/setup.php');
         <div class="content">
             <?php 
 			
-		if ($pg == 'blog') { get_blog($dbc); } 
-		else { get_page($dbc, $pg); }
+				if ($pg == 'blog') { get_blog($dbc); } 
+				else { get_page($dbc, $pg); }
 				
-	    ?>    
+			?>    
         </div><!-- END content -->
     
-        <div class="clear"></div>
+    	<div class="clear"></div>
     
         <div class="footer"><?php footer(); ?></div><!-- END footer -->
         
