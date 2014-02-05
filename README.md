@@ -16,9 +16,16 @@ The Original branch is for the first set of videos which had ended premature.
 
 To switch the the Original Branch [click here] (https://github.com/thedigicraft/atomCMS/tree/original)
 
+## Contact
+[Website] (http://thedigitalcraft.com) _DONTATE!, Watch videos, Schedule Private Training, More source code_
+[Facebook] (http://facebook.com/thedigicraft) _Updates and more!_
+[YouTube] (http://youtube.com/thedigicraft) _All of our videos_
+[Twitter] (http://twitter.com/thedigicraft) _Because you have to have one right??_
 
 Features
---------
+---
+
+These are the features or topics that have been discussed in this project and which video they are first introduced.
 
 #### How to read this table
 | Feature Name | Video |
@@ -27,6 +34,15 @@ Features
 
 ### Features Table
 _This table is still being constructed..._
+
+#### PHP
+| Feature Name | Video	|
+|---|---:|
+|functions|na|
+|variables|na|
+|arrays|na|
+|mysql|na|
+|constants|na|
 
 #### jQuery
 | Feature Name | Video	|
@@ -37,6 +53,9 @@ _This table is still being constructed..._
 |hide|19|
 
 
-Thanks!
+Footer Stuff
+---
+
+Thanks for watching our videos!
 
 [Alan] (https://github.com/thedigicraft)
