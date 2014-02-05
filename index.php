@@ -1,41 +1,39 @@
-<?php
-// Setup document:
-include('config/setup.php');
+<?php include('config/setup.php'); ?>
 
-?>
-
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
+	
 <head>
-<meta charset="utf-8">
-<title><?php echo $page_title; // Title of the Page ?> - ATOM.CMS</title>
 
-<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<title><?php echo $page['title'].' | '.$site_title; ?></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<?php include('config/css.php'); ?>
+	
+	<?php include('config/js.php'); ?>
 
 </head>
-
+	
 <body>
-
-    <div class="wrap_overall">
-    
-        <div class="header"><?php head(); ?></div><!-- END header -->
-    
-        <div class="nav_main"><?php nav_main(); ?></div><!-- END nav_main -->
-    
-        <div class="content">
-            <?php 
+	
+	<div id="wrap">		
 			
-				if ($pg == 'blog') { get_blog($dbc); } 
-				else { get_page($dbc, $pg); }
-				
-			?>    
-        </div><!-- END content -->
-    
-    	<div class="clear"></div>
-    
-        <div class="footer"><?php footer(); ?></div><!-- END footer -->
-        
-    </div><!-- END wrap_overall -->
+		<?php include(D_TEMPLATE.'/navigation.php'); // Main Navigation ?>
 
+		<div class="container">
+			
+			<h1><?php echo $page['header']; ?></h1>
+			
+			<?php echo $page['body_formatted']; ?>
+			
+		</div>
+
+	</div><!-- END wrap -->		
+
+	<?php include(D_TEMPLATE.'/footer.php'); // Page Footer ?>		
+
+	<?php if($debug == 1) { include('widgets/debug.php'); } ?>
+	
 </body>
+
 </html>
