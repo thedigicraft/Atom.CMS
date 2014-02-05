@@ -1,4 +1,4 @@
-AtomCMS
+AtomCMS 2.0
 =========================
 
 
@@ -6,15 +6,26 @@ This is the repository for The Digital Craft's AtomCMS from the Developing a Dyn
 
 The AtomCMS was created for learning purposes.  
 
-Original Branch:
-----------------
+## News
+
+We have started our AtomCMS new series title Developing A Dynamic Website 2014. This [YouTube playlist] (http://www.youtube.com/playlist?list=PLAkMqlQoeMeiwvNWpe3mhgQxAa1jiGwmt) has all of the videos that have been created to date.
+
+### Original Branch (1.0):
+
 The Original branch is for the first set of videos which had ended premature.  
 
 To switch the the Original Branch [click here] (https://github.com/thedigicraft/atomCMS/tree/original)
 
-What's New
-----------
-We will be creating a brand new version and new set of videos in 2014.  
+
+Features
+--------
+_This table is still being constructed..._
+
+| Feature Name			|Status		| Added	(Video Number)	|
+|-----------------------|:---------:|----------------------:|
+| Bootstrap 3.0			|Added		| NA					|
+
+
 
 Thanks!
 
