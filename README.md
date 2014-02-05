@@ -21,10 +21,15 @@ Features
 --------
 _This table is still being constructed..._
 
-| Feature Name			|Status		| Added	(Video Number)	|
+| Feature Name | Added | Introduced	|
 |-----------------------|:---------:|----------------------:|
-| Bootstrap 3.0			|Added		| NA					|
-
+| Bootstrap 3 | Yes | 3 |
+| FontAwesome 4| Yes | 3 |
+| Font Awesome 4| Yes | 3 |
+| Font Awesome 4| Yes | 3 |
+| Font Awesome 4| Yes | 3 |
+| Font Awesome 4| Yes | 3 |
+| Font Awesome 4| Yes | 3 |
 
 
 Thanks!
