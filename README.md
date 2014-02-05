@@ -19,23 +19,22 @@ To switch the the Original Branch [click here] (https://github.com/thedigicraft/
 
 Features
 --------
-_This table is still being constructed..._
 
 #### How to read this table
-| Feature Name | Added | Video |
-|--------------|-------|-------|
-| _Name of the feature_ | _Supported Video_ | _Which video is the feature first introduced?_ |
+| Feature Name | Video |
+|--------------|-------|
+| _Name of the feature_ | _Which video is the feature first introduced?_ |
 
-### Feature Table
-| Feature Name | Added | Video	|
-|-----------------------|:---------:|----------------------:|
-| Bootstrap 3 | Yes | 3 |
-| FontAwesome 4 | Yes | 3 |
-| jQuery | Yes | 19 |
-| MySQL Database | Yes | 7 |
-| jQuery toggle | Yes | 19 |
-| Font Awesome 4| Yes | 3 |
-| Font Awesome 4| Yes | 3 |
+### Features Table
+_This table is still being constructed..._
+
+#### jQuery
+| Feature Name | Video	|
+|---|---:|
+|toggle|19|
+|ready|19|
+|click|19|
+|hide|19|
 
 
 Thanks!
