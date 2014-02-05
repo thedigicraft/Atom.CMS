@@ -4,7 +4,7 @@ AtomCMS 2.0
 
 This is the repository for The Digital Craft's AtomCMS from the Developing a Dynamic Website from Start to Finish series.
 
-The AtomCMS was created for learning purposes.  The Digital Craft relies soley on funds from [donations] (http://www.thedigitalcraft.com), [YouTube ads] (http://youtube.com/thedigicraft), and [private lessions] (http://www.thedigitalcraft.com/private-training).
+The AtomCMS was created for learning purposes.  The Digital Craft relies solely on funds from [donations] (http://www.thedigitalcraft.com), [YouTube ads] (http://youtube.com/thedigicraft), and [private lessions] (http://www.thedigitalcraft.com/private-training).
 
 > Original Branch (1.0):
 > The Original branch is for the first set of videos which had ended premature.  
