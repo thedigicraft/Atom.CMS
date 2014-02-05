@@ -4,15 +4,17 @@ AtomCMS 2.0
 
 This is the repository for The Digital Craft's AtomCMS from the Developing a Dynamic Website from Start to Finish series.
 
-The AtomCMS was created for learning purposes.  
+The AtomCMS was created for learning purposes.  The Digital Craft relies soley on funds from [donations] (http://www.thedigitalcraft.com), [YouTube ads] (http://youtube.com/thedigicraft), and [private lessions] (http://www.thedigitalcraft.com/private-training).
+
+> Original Branch (1.0):
+> The Original branch is for the first set of videos which had ended premature.  
+> To switch the the Original Branch [click here] (https://github.com/thedigicraft/atomCMS/tree/original)
 
 ## News
 
 We have started our AtomCMS new series title Developing A Dynamic Website 2014. This [YouTube playlist] (http://www.youtube.com/playlist?list=PLAkMqlQoeMeiwvNWpe3mhgQxAa1jiGwmt) has all of the videos that have been created to date.
 
-> Original Branch (1.0):
-> The Original branch is for the first set of videos which had ended premature.  
-> To switch the the Original Branch [click here] (https://github.com/thedigicraft/atomCMS/tree/original)
+
 
 ## Contact
 - [Website] (http://thedigitalcraft.com) _DONTATE!, Watch videos, Schedule Private Training, More source code_
@@ -59,3 +61,4 @@ Footer Stuff
 Thanks for watching our videos!
 
 [Alan] (https://github.com/thedigicraft)
+[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/03cd67ef130516d3db484c290603fba7 "githalytics.com")](http://githalytics.com/thedigicraft/atomCMS)
