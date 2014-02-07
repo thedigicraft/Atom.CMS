@@ -1,7 +1,26 @@
 <?php 
 
+# Start Session:
+session_start();
+
 # Database Connection:
 include('../config/connection.php');
+
+if($_POST) {
+	
+	$q = "SELECT * FROM users WHERE email = '$_POST[email]' AND password = SHA1('$_POST[password]')";
+	$r = mysqli_query($dbc, $q);
+	
+	if(mysqli_num_rows($r) == 1) {
+		
+		$_SESSION['username'] = $_POST['email'];
+		header('Location: index.php');
+		
+	}
+	
+	
+}
+
 
 ?>
 
@@ -10,7 +29,7 @@ include('../config/connection.php');
 	
 <head>
 
-	<title><?php echo $page['title'].' | '.$site_title; ?></title>
+	<title>Admin Login</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<?php include('config/css.php'); ?>
@@ -38,18 +57,6 @@ include('../config/connection.php');
 						</div><!-- END panel-heading -->
 						
 						<div class="panel-body">
-						
-							<?php
-							
-								if($_POST) {
-									
-									echo $_POST['email'];
-									echo '<br>';
-									echo $_POST['password'];
-									
-								}
-							
-							?>
 						
 							<form action="login.php" method="post" role="form">
 								
