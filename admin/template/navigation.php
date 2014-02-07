@@ -14,6 +14,7 @@
 			<li><a href="#">Pages</a></li>
 			<li><a href="#">Users</a></li>
 			<li><a href="#">Settings</a></li>
+			<li><a href="logout.php">Logout</a></li>
 			
 		</ul>
 		
