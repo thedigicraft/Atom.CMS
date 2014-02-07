@@ -26,12 +26,9 @@ include('../config/connection.php');
 		<?php //include(D_TEMPLATE.'/navigation.php'); // Main Navigation ?>
 
 		<div class="container">
-	
-			
-			
+
 			<div class="row">
-				
-				
+
 				<div class="col-md-4 col-md-offset-4">
 				
 					<div class="panel panel-info">
@@ -42,16 +39,28 @@ include('../config/connection.php');
 						
 						<div class="panel-body">
 						
-							<form role="form">
+							<?php
+							
+								if($_POST) {
+									
+									echo $_POST['email'];
+									echo '<br>';
+									echo $_POST['password'];
+									
+								}
+							
+							?>
+						
+							<form action="login.php" method="post" role="form">
 								
 							  <div class="form-group">
-							    <label for="exampleInputEmail1">Email address</label>
-							    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+							    <label for="email">Email address</label>
+							    <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
 							  </div>
 							  
 							  <div class="form-group">
-							    <label for="exampleInputPassword1">Password</label>
-							    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+							    <label for="password">Password</label>
+							    <input type="password" class="form-control" id="password" name="password" placeholder="Password">
 							  </div>
 							  
 							  <!--

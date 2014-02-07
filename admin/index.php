@@ -1,3 +1,15 @@
+<?php
+
+# Start the session:
+session_start();
+
+if(!isset($_SESSION['username'])) {
+	header('Location: login.php');
+}
+
+
+?>
+
 <?php include('config/setup.php'); ?>
 
 <!DOCTYPE html>
