@@ -42,7 +42,7 @@ _This table is still being constructed..._
 |constants|na|
 |arrays|na|
 |functions|na|
-|mysql connection|na|
+|mysql connection|6|
 |mysql queries|na|
 
 
