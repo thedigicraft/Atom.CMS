@@ -1,0 +1,4 @@
+I have not included TinyMCE in the repository.  I do not own nor did I develop TinyMCE.  Please follow the instructions in our videos in order to install TinyMCE.
+
+Thanks!!!
+Alan
