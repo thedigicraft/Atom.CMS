@@ -51,9 +51,9 @@ Video List
 | 22 | [Creating a Table for Users] (http://www.youtube.com/watch?v=T9X5e_yjQB8) |
 | 23 | [Creating the Admin Panel reusing the Frontend Code] (http://www.youtube.com/watch?v=_rSBUmVmCm4) |
 | 24 | [Creating a Login Page with PHP] (http://www.youtube.com/watch?v=9L_eWGPmmJ0) |
-| 25 | [Title] | (URL) |
-| 26 | [Title] | (URL) |
-| 27 | [Title] | (URL) |
+| 25 | [Styling the Login Page with Bootstrap ] | (http://www.youtube.com/watch?v=pYOYZdM_tcE) |
+| 26 | [Creating a Panel with Bootstrap] | (http://www.youtube.com/watch?v=_UgT6DjJi7Q) |
+| 27 | [Setup the Log in HTML Form] | (http://www.youtube.com/watch?v=ldPPttGFJYk) |
 | 28 | [Title] | (URL) |
 | 29 | [Title] | (URL) |
 | 30 | [Title] | (URL) |
