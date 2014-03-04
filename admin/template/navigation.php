@@ -5,15 +5,12 @@
 	
 		
 		<ul class="nav navbar-nav">
-			
-			<?php //nav_main($dbc, $pageid); ?>
-			
-			<li><a href="#">Dashboard</a></li>
-			<li><a href="#">Pages</a></li>
-			<li><a href="#">Users</a></li>
-			<li><a href="#">Settings</a></li>
-			
-			
+
+			<li><a href="?page=dashboard">Dashboard</a></li>
+			<li><a href="?page=pages">Pages</a></li>
+			<li><a href="?page=users">Users</a></li>
+			<li><a href="?page=settings">Settings</a></li>
+					
 		</ul>
 		
 		<div class="pull-right">
