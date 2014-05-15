@@ -76,29 +76,29 @@ Video List
 | 47 | [Using Htaccess and PHP to Create Clean URLs]  (http://www.youtube.com/watch?v=7YvOr2kJeoM) |
 | 48 | [Understanding the Rewrite Mod in Htaccess]  (http://www.youtube.com/watch?v=3XPDS2kN210) |
 | 49 | [Using PHP to Handle a Clean URL]  (http://www.youtube.com/watch?v=0zKiNWBpPK0) |
-| 50 | [Title] | (URL) |
-| 51 | [Title] | (URL) |
-| 52 | [Title] | (URL) |
-| 53 | [Title] | (URL) |
-| 54 | [Title] | (URL) |
-| 55 | [Title] | (URL) |
-| 56 | [Title] | (URL) |
-| 57 | [Title] | (URL) |
-| 58 | [Title] | (URL) |
-| 59 | [Title] | (URL) |
-| 60 | [Title] | (URL) |
-| 61 | [Title] | (URL) |
-| 62 | [Title] | (URL) |
-| 63 | [Title] | (URL) |
-| 64 | [Title] | (URL) |
-| 65 | [Title] | (URL) |
-| 66 | [Title] | (URL) |
-| 67 | [Title] | (URL) |
-| 68 | [Title] | (URL) |
-| 69 | [Title] | (URL) |
-| 70 | [Title] | (URL) |
-| 71 | [Title] | (URL) |
-| 72 | [Title] | (URL) |
+| 50 | [Changing the Setup File to Use the Clean URL Data] (http://www.youtube.com/watch?v=0zKiNWBpPK0) |
+| 51 | [Updating the Navigation to use the Clean URLs] (http://www.youtube.com/watch?v=JkGXg85oE8E) |
+| 52 | [Fixing the Active State on the Navigation] (http://www.youtube.com/watch?v=M3LGbTRjRsg) |
+| 53 | [Admin Template System] (http://www.youtube.com/watch?v=YtMDg2yiNM0) |
+| 54 | [Setting Up Views] (http://www.youtube.com/watch?v=oH1Rvr_UjIo) |
+| 55 | [Creating a User Management Page] (http://www.youtube.com/watch?v=MkJ5Hccuyyk) |
+| 56 | [INSERT and UPDATE Query for Users in the Admin] (http://www.youtube.com/watch?v=7iCdDPxpK2E) |
+| 57 | [Title] (http://www.youtube.com/watch?v=Ndf0gAXTUaI) |
+| 58 | [Title] (http://www.youtube.com/watch?v=-hBRLetHA48) |
+| 59 | [Title] (http://www.youtube.com/watch?v=kGZfjp066TM) |
+| 60 | [Title] (http://www.youtube.com/watch?v=kGZfjp066TM) |
+| 61 | [Title] (http://www.youtube.com/watch?v=D-JqnLwiGJA) |
+| 62 | [Troubleshooting] (http://www.youtube.com/watch?v=ouIaeTtY9so) |
+| 63 | [Title] (http://www.youtube.com/watch?v=vMw62iAXvcY) |
+| 64 | [Title] (http://www.youtube.com/watch?v=xFzc_rHoF4A) |
+| 65 | [Title] (http://www.youtube.com/watch?v=cZU4ddkEwks) |
+| 66 | [Adding a Delete Page Button] (http://www.youtube.com/watch?v=TQAooby--gA) |
+| 67 | [Generating a Unique ID Property] (http://www.youtube.com/watch?v=I10m9fjiyJ8) |
+| 68 | [Adding JQuery to handle the Delete Button] (http://www.youtube.com/watch?v=sJb1sYK4yak) |
+| 69 | [Starting your AJAX Document] (http://www.youtube.com/watch?v=RAMEumDh7Kw) |
+| 70 | [Removing an Element from a Page with JQuery] (http://www.youtube.com/watch?v=oJ8CR2klSf0) |
+| 71 | [Adding MYSQL to The AJAX Document] (http://www.youtube.com/watch?v=pmsUsX8uXoY) |
+| 72 | [Confirmation Box to Confirm Deletion] (http://www.youtube.com/watch?v=DBMCVZzdWw8) |
 
 
 Features
