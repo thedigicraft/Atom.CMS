@@ -54,28 +54,28 @@ Video List
 | 25 | [Styling the Login Page with Bootstrap ] | (http://www.youtube.com/watch?v=pYOYZdM_tcE) |
 | 26 | [Creating a Panel with Bootstrap] | (http://www.youtube.com/watch?v=_UgT6DjJi7Q) |
 | 27 | [Setup the Log in HTML Form] | (http://www.youtube.com/watch?v=ldPPttGFJYk) |
-| 28 | [Title] | (URL) |
-| 29 | [Title] | (URL) |
-| 30 | [Title] | (URL) |
-| 31 | [Title] | (URL) |
-| 32 | [Title] | (URL) |
-| 33 | [Title] | (URL) |
-| 34 | [Title] | (URL) |
-| 35 | [Title] | (URL) |
-| 36 | [Title] | (URL) |
-| 37 | [Title] | (URL) |
-| 38 | [Title] | (URL) |
-| 39 | [Title] | (URL) |
-| 40 | [Title] | (URL) |
-| 41 | [Title] | (URL) |
-| 42 | [Title] | (URL) |
-| 43 | [Title] | (URL) |
-| 44 | [Title] | (URL) |
-| 45 | [Title] | (URL) |
-| 46 | [Title] | (URL) |
-| 47 | [Title] | (URL) |
-| 48 | [Title] | (URL) |
-| 49 | [Title] | (URL) |
+| 28 | [Password Protecting with Sessions using PHP MySQL] | (http://www.youtube.com/watch?v=zkur8MJKRs8) |
+| 29 | [Creating the Ability to Log Out] | (http://www.youtube.com/watch?v=OjmKToSwJlI) |
+| 30 | [Creating a Drop down Menu with Bootstrap] | (http://www.youtube.com/watch?v=OHsADIbKmN8) |
+| 31 | [Create a PHP Function to Load All of a User's Data] | (http://www.youtube.com/watch?v=VKJn6jSYzkA) |
+| 32 | [Create a Sidebar with Bootstrap's Grid System] | (http://www.youtube.com/watch?v=iWsL2UsQdF0) |
+| 33 | [Create a List Group with Bootstrap] | (http://www.youtube.com/watch?v=ijJPSlYpN3M) |
+| 34 | [Create an HTML Form to INSERT Data into MySQL] | (http://www.youtube.com/watch?v=u8Pe9Jtq6wg) |
+| 35 | [Run an INSERT Query When an HTML Form is Submitted] | (http://www.youtube.com/watch?v=2R0LUX-kEM0) |
+| 36 | [Error Handling with mysqli_ error() ] | (http://www.youtube.com/watch?v=0_ICXWY700I) |
+| 37 | [Creating a Dynamic HTML Select Box with PHP and MySQL] | (http://www.youtube.com/watch?v=OSZIMM_bhT8) |
+| 38 | [Using an Id or Email Address to Load User Data] | (http://www.youtube.com/watch?v=32OwR1y7F1Q) |
+| 39 | [Creating Slugs to Prepare for Clean URLs] | (http://www.youtube.com/watch?v=tpxO60o_D2Y) |
+| 40 | [Adding a Slug Field to the HTML Form] | (http://www.youtube.com/watch?v=zoz5hrMCgAM) |
+| 41 | [Auto select an Option from a Select Box] | (http://www.youtube.com/watch?v=60I-JKmadM4) |
+| 42 | [Adding the TinyMCE WYSIWYG Editor to the Admin Forms] | (http://www.youtube.com/watch?v=LNZDeh_Fqfk) |
+| 43 | [Advanced TinyMCE Options] | (http://www.youtube.com/watch?v=OUfpS_sChuk) |
+| 44 | [Using UPDATE to Change the MySQL Database with PHP] | (http://www.youtube.com/watch?v=OUfpS_sChuk) |
+| 45 | [Dynamically Setting an Active CSS Class to HTML Links] | (http://www.youtube.com/watch?v=WKPoDhmLibI) |
+| 46 | [Creating a PHP Function to Compare Values] | (http://www.youtube.com/watch?v=alZ5CJBdMDk) |
+| 47 | [Using Htaccess and PHP to Create Clean URLs] | (http://www.youtube.com/watch?v=7YvOr2kJeoM) |
+| 48 | [Understanding the Rewrite Mod in Htaccess] | (http://www.youtube.com/watch?v=3XPDS2kN210) |
+| 49 | [Using PHP to Handle a Clean URL] | (http://www.youtube.com/watch?v=0zKiNWBpPK0) |
 | 50 | [Title] | (URL) |
 | 51 | [Title] | (URL) |
 | 52 | [Title] | (URL) |
@@ -91,6 +91,14 @@ Video List
 | 62 | [Title] | (URL) |
 | 63 | [Title] | (URL) |
 | 64 | [Title] | (URL) |
+| 65 | [Title] | (URL) |
+| 66 | [Title] | (URL) |
+| 67 | [Title] | (URL) |
+| 68 | [Title] | (URL) |
+| 69 | [Title] | (URL) |
+| 70 | [Title] | (URL) |
+| 71 | [Title] | (URL) |
+| 72 | [Title] | (URL) |
 
 
 Features
