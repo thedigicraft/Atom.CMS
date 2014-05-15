@@ -12,6 +12,10 @@ The AtomCMS was created for learning purposes.  The Digital Craft relies solely 
 
 ## News
 
+### 5-14-2014
+We had taken a break from recording but we are back.  I just updated the video list below to include all current videos up to video #72. Thanks for watching!
+
+### Old News...
 We have started our AtomCMS new series title Developing A Dynamic Website 2014. This [YouTube playlist] (http://www.youtube.com/playlist?list=PLAkMqlQoeMeiwvNWpe3mhgQxAa1jiGwmt) has all of the videos that have been created to date.
 
 
