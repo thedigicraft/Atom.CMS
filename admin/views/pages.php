@@ -22,7 +22,7 @@
 					
 			?>
 
-			<div class="list-group-item <?php selected($list['id'], $opened['id'], 'active'); ?>">
+			<div id="page_<?php echo $list['id']; ?>" class="list-group-item <?php selected($list['id'], $opened['id'], 'active'); ?>">
 				<h4 class="list-group-item-heading"><?php echo $list['title']; ?>
 				<span class="pull-right">
 					<a href="#" id="del_<?php echo $list['id']; ?>" class="btn btn-danger btn-delete"><i class="fa fa-trash-o"></i></a>

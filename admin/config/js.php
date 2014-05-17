@@ -30,6 +30,29 @@
 		});
 		
 		
+		$(".btn-delete").on("click", function() {
+			
+			var selected = $(this).attr("id");
+			var pageid = selected.split("del_").join("");
+			
+			var confirmed = confirm("Are you sure you want to delete this page?");
+			
+			if(confirmed == true) {
+				
+				$.get("ajax/pages.php?id="+pageid);
+				
+				$("#page_"+pageid).remove();				
+				
+			}
+			
+
+			
+			//alert(selected);
+			
+		})
+		
+		
+		
 	});
 
 	tinymce.init({
