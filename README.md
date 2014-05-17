@@ -12,8 +12,13 @@ The AtomCMS was created for learning purposes.  The Digital Craft relies solely 
 
 ## News
 
-### 5-15-2014
+### 5-17-2014
 We have launched a crowd funding campaign to help us continue making videos that are free for everyone to watch.  Please check out the fundraising page here.  http://indiegogo.com/projects/the-digital-craft-needs-an-upgrade We really really need your support! Thanks for watching!
+
+### 5-15-2014
+We have created a "project status" page that lets you see what new features/videos are planning to add.  You can see what we are working on currently, what is next, and what has been completed.  This list is built from users requests and our own ideas for additions. http://www.thedigitalcraft.com/projects/  
+
+To suggest more features please visit our Facebook page and leave a comment! http://facebook.com/thedigicraft We really really need your support! Thanks for watching!
 
 ### 5-14-2014
 We had taken a break from recording but we are back.  I just updated the video list below to include all current videos up to video #72. Thanks for watching!
