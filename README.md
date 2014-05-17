@@ -12,6 +12,9 @@ The AtomCMS was created for learning purposes.  The Digital Craft relies solely 
 
 ## News
 
+### 5-15-2014
+We have launched a crowd funding campaign to help us continue making videos that are free for everyone to watch.  Please check out the fundraising page here.  http://indiegogo.com/projects/the-digital-craft-needs-an-upgrade We really really need your support! Thanks for watching!
+
 ### 5-14-2014
 We had taken a break from recording but we are back.  I just updated the video list below to include all current videos up to video #72. Thanks for watching!
 
@@ -88,15 +91,15 @@ Video List
 | 54 | [Setting Up Views] (http://www.youtube.com/watch?v=oH1Rvr_UjIo) |
 | 55 | [Creating a User Management Page] (http://www.youtube.com/watch?v=MkJ5Hccuyyk) |
 | 56 | [INSERT and UPDATE Query for Users in the Admin] (http://www.youtube.com/watch?v=7iCdDPxpK2E) |
-| 57 | [Title] (http://www.youtube.com/watch?v=Ndf0gAXTUaI) |
-| 58 | [Title] (http://www.youtube.com/watch?v=-hBRLetHA48) |
-| 59 | [Title] (http://www.youtube.com/watch?v=kGZfjp066TM) |
-| 60 | [Title] (http://www.youtube.com/watch?v=kGZfjp066TM) |
-| 61 | [Title] (http://www.youtube.com/watch?v=D-JqnLwiGJA) |
+| 57 | [Creating the HTML Form for Adding / Editing Users] (http://www.youtube.com/watch?v=Ndf0gAXTUaI) |
+| 58 | [Checking for Passwords Submission] (http://www.youtube.com/watch?v=-hBRLetHA48) |
+| 59 | [Password Verification] (http://www.youtube.com/watch?v=kGZfjp066TM) |
+| 60 | [Error Handling] (http://www.youtube.com/watch?v=kGZfjp066TM) |
+| 61 | [Inserting Records and Adding Email Field] (http://www.youtube.com/watch?v=D-JqnLwiGJA) |
 | 62 | [Troubleshooting] (http://www.youtube.com/watch?v=ouIaeTtY9so) |
-| 63 | [Title] (http://www.youtube.com/watch?v=vMw62iAXvcY) |
-| 64 | [Title] (http://www.youtube.com/watch?v=xFzc_rHoF4A) |
-| 65 | [Title] (http://www.youtube.com/watch?v=cZU4ddkEwks) |
+| 63 | [Starting The Settings Tool] (http://www.youtube.com/watch?v=vMw62iAXvcY) |
+| 64 | [Formatting The Settings Tool] (http://www.youtube.com/watch?v=xFzc_rHoF4A) |
+| 65 | [Saving Settings] (http://www.youtube.com/watch?v=cZU4ddkEwks) |
 | 66 | [Adding a Delete Page Button] (http://www.youtube.com/watch?v=TQAooby--gA) |
 | 67 | [Generating a Unique ID Property] (http://www.youtube.com/watch?v=I10m9fjiyJ8) |
 | 68 | [Adding JQuery to handle the Delete Button] (http://www.youtube.com/watch?v=sJb1sYK4yak) |
