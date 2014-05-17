@@ -24,7 +24,7 @@ To suggest more features please visit our Facebook page and leave a comment! htt
 We had taken a break from recording but we are back.  I just updated the video list below to include all current videos up to video #72. Thanks for watching!
 
 
-### Old News...
+### Dec 2013
 We have started our AtomCMS new series title Developing A Dynamic Website 2014. This [YouTube playlist] (http://www.youtube.com/playlist?list=PLAkMqlQoeMeiwvNWpe3mhgQxAa1jiGwmt) has all of the videos that have been created to date.
 
 
