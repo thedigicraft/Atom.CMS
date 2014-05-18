@@ -15,7 +15,11 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 
+<!-- TinyMCE -->
 <script src="js/tinymce/tinymce.min.js"></script>
+
+<!-- Dropzone.js -->
+<script src="js/dropzone.js"></script>
 
 <script>
 	

@@ -16,6 +16,9 @@
 <!-- jQuery CSS -->
 <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui-custom.css">
 
+<!-- Dropzone CSS -->
+<link rel="stylesheet" href="css/dropzone.css">
+
 <!-- FontAwesome -->
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
