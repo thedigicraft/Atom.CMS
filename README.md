@@ -112,6 +112,7 @@ Video List
 | 70 | [Removing an Element from a Page with JQuery] (http://www.youtube.com/watch?v=oJ8CR2klSf0) |
 | 71 | [Adding MYSQL to The AJAX Document] (http://www.youtube.com/watch?v=pmsUsX8uXoY) |
 | 72 | [Confirmation Box to Confirm Deletion] (http://www.youtube.com/watch?v=DBMCVZzdWw8) |
+| 73 | [Adding Dropzone.js For Image Uploading] (http://www.youtube.com/watch?v=6OBQ9UCxwow) |
 
 
 Features
