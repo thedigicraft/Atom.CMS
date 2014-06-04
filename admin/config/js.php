@@ -56,8 +56,16 @@
 		})
 		
 		
+		$("#sort-nav").sortable({
+			cursor: "move",
+			update: function() {
+				var order = $(this).sortable("serialize");
+				$.get("ajax/list-sort.php", order);
+			}
+		});
 		
-	});
+		
+	}); // END document.ready();
 
 	tinymce.init({
 	    selector: ".editor",
