@@ -33,9 +33,9 @@ function data_user($dbc, $id) {
 	
 }
 
-function data_page($dbc, $id) {
+function data_post($dbc, $id) {
 	
-	$q = "SELECT * FROM pages WHERE id = $id";
+	$q = "SELECT * FROM posts WHERE id = $id";
 	$r = mysqli_query($dbc, $q);
 	
 	$data = mysqli_fetch_assoc($r);	
