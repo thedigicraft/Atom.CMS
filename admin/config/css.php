@@ -19,6 +19,9 @@
 <!-- Dropzone CSS -->
 <link rel="stylesheet" href="css/dropzone.css">
 
+<!-- Atom.SaveOnBlur CSS -->
+<link rel="stylesheet" href="css/jquery.atom.SaveOnBlur.css">
+
 <!-- FontAwesome -->
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
