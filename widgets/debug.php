@@ -30,6 +30,12 @@
 
 	<pre>
 <?php print_r($page); ?>			
-	</pre>			
+	</pre>
+	
+<h1>View Array:</h1>	
+
+	<pre>
+<?php print_r($view); ?>			
+	</pre>				
 	
 </div>

@@ -7,6 +7,7 @@ include('config/connection.php');
 
 # Constants:
 DEFINE('D_TEMPLATE', 'template');
+DEFINE('D_VIEW', 'views');
 
 # Functions:
 include('functions/sandbox.php');
@@ -28,8 +29,8 @@ if(!isset($path['call_parts'][0]) || $path['call_parts'][0] == '' ) {
 }
 
 # Page Setup:
-$page = data_page($dbc, $path['call_parts'][0]);
-
+$page = data_post($dbc, $path['call_parts'][0]);
+$view = data_post_type($dbc, $page['type']);
 
 
 
