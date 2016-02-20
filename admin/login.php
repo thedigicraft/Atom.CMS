@@ -6,7 +6,7 @@ session_start();
 # Database Connection:
 include('../config/connection.php');
 
-if($_POST) {
+if(!empty($_POST)&&$_SERVER["REQUEST_METHOD"]=="POST") {
 	
 	$q = "SELECT * FROM users WHERE email = '$_POST[email]' AND password = SHA1('$_POST[password]')";
 	$r = mysqli_query($dbc, $q);
