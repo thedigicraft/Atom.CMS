@@ -14,7 +14,7 @@ The AtomCMS was created for learning purposes.  The Digital Craft relies solely 
 
 ### 22-12-2022
 An updated version of AtomCMS 2.0 has been uploaded to the branch "AtomCMS-2.1". The new branch contains security patches for web application vulnerabilities. 
-More information about web application vulnerabilities found in AtomCMS 2.0 can be found here: https://v-dumitrescu.github.io/atomcms2.0-security/
+More informations about the web application vulnerabilities found in AtomCMS-2.0 here: https://v-dumitrescu.github.io/atomcms2.0-security/
 
 ### 5-17-2014
 We have launched a crowd funding campaign to help us continue making videos that are free for everyone to watch.  Please check out the fundraising page here.  http://indiegogo.com/projects/the-digital-craft-needs-an-upgrade We really really need your support! Thanks for watching!
