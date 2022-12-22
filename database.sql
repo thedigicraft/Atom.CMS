@@ -1,45 +1,96 @@
 -- phpMyAdmin SQL Dump
--- version 3.4.5
--- http://www.phpmyadmin.net
+-- version 5.0.4deb2+deb11u1
+-- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: Mar 16, 2014 at 10:44 AM
--- Server version: 5.5.16
--- PHP Version: 5.3.8
+-- Host: localhost:3306
+-- Generation Time: Dec 22, 2022 at 10:47 PM
+-- Server version: 10.5.18-MariaDB-0+deb11u1
+-- PHP Version: 7.4.33
 
-SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
 SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
 
 --
 -- Database: `atomcms`
 --
+CREATE DATABASE IF NOT EXISTS `atomcms` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `atomcms`;
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `pages`
+-- Table structure for table `navigation`
 --
 
-CREATE TABLE IF NOT EXISTS `pages` (
-  `id` mediumint(9) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `navigation` (
+  `id` mediumint(9) NOT NULL,
+  `label` varchar(300) NOT NULL,
+  `url` varchar(300) NOT NULL,
+  `target` varchar(30) NOT NULL,
+  `position` int(3) NOT NULL,
+  `status` int(1) NOT NULL DEFAULT 1
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `navigation`
+--
+
+INSERT INTO `navigation` (`id`, `label`, `url`, `target`, `position`, `status`) VALUES
+(1, 'Home', 'http://localhost/Atom.CMS/home', '', 0, 1),
+(2, 'About Us', 'http://localhost/Atom.CMS/about-us', '', 1, 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `posts`
+--
+
+CREATE TABLE `posts` (
+  `id` mediumint(9) NOT NULL,
   `user` mediumint(9) NOT NULL,
+  `type` mediumint(9) NOT NULL,
   `slug` varchar(300) NOT NULL,
   `label` varchar(100) NOT NULL,
   `title` varchar(200) NOT NULL,
   `header` varchar(300) NOT NULL,
-  `body` longtext NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `user` (`user`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+  `body` longtext NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `pages`
+-- Dumping data for table `posts`
 --
 
-INSERT INTO `pages` (`id`, `user`, `slug`, `label`, `title`, `header`, `body`) VALUES
-(1, 1, 'home', 'Home', 'Home', 'Welcome to AtomCMS 2.0', '<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>'),
-(2, 3, 'about-us', 'About', 'About Us', 'About AtomCMS', '<img style="float:right; width:320px; height:240px; margin-left:10px;" src="images/sample.jpg">\r\nLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.'),
-(3, 1, '', '', 'teste', '', '');
+INSERT INTO `posts` (`id`, `user`, `type`, `slug`, `label`, `title`, `header`, `body`) VALUES
+(1, 1, 1, 'home', 'Home', 'Home', 'Welcome to AtomCMS 2.1', 'PHP is a general-purpose scripting language geared toward web development. It was originally created by Danish-Canadian programmer Rasmus Lerdorf in 1993 and released in 1995. The PHP reference implementation is now produced by The PHP Group. PHP originally stood for Personal Home Page, but it now stands for the recursive initialism PHP: Hypertext Preprocessor. Source: Wikipedia'),
+(2, 2, 1, 'about-us', 'About', 'About Page', 'About AtomCMS 2.1', '<img style=\"float:right;width:320px;height:240px;margin-left:3px;\" src=\"images/sample.jpg\" alt=\"sample.jpeg\" />\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'),
+(3, 2, 1, 'test', 'Test', 'Test', 'Test', 'Testing');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `post_types`
+--
+
+CREATE TABLE `post_types` (
+  `id` mediumint(9) NOT NULL,
+  `label` varchar(150) NOT NULL,
+  `name` varchar(150) NOT NULL,
+  `status` int(1) NOT NULL DEFAULT 1
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `post_types`
+--
+
+INSERT INTO `post_types` (`id`, `label`, `name`, `status`) VALUES
+(1, 'Pages', 'page', 1);
 
 -- --------------------------------------------------------
 
@@ -47,12 +98,11 @@ INSERT INTO `pages` (`id`, `user`, `slug`, `label`, `title`, `header`, `body`) V
 -- Table structure for table `settings`
 --
 
-CREATE TABLE IF NOT EXISTS `settings` (
+CREATE TABLE `settings` (
   `id` varchar(200) NOT NULL,
   `label` varchar(200) NOT NULL,
-  `value` longtext NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `value` longtext NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `settings`
@@ -60,7 +110,7 @@ CREATE TABLE IF NOT EXISTS `settings` (
 
 INSERT INTO `settings` (`id`, `label`, `value`) VALUES
 ('debug-status', 'Debug Status', '1'),
-('site-title', 'Site Title', 'AtomCMS 2.0');
+('site-title', 'Site Title', 'AtomCMS 2.1');
 
 -- --------------------------------------------------------
 
@@ -68,23 +118,89 @@ INSERT INTO `settings` (`id`, `label`, `value`) VALUES
 -- Table structure for table `users`
 --
 
-CREATE TABLE IF NOT EXISTS `users` (
-  `id` mediumint(9) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `users` (
+  `id` mediumint(9) NOT NULL,
+  `avatar` varchar(100) NOT NULL,
   `first` varchar(200) NOT NULL,
   `last` varchar(200) NOT NULL,
   `email` varchar(300) NOT NULL,
   `password` varchar(200) NOT NULL,
-  `status` int(1) NOT NULL DEFAULT '1',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
+  `status` int(1) NOT NULL DEFAULT 1
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `first`, `last`, `email`, `password`, `status`) VALUES
-(1, 'Alan2', 'Quandt', 'alan@alan.com', '5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8', 1),
-(2, 'Justin', 'Gilson', 'justin@justin.com', '5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8', 1),
-(3, 'John', 'Rainey', 'john@john.com', '5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8', 1),
-(5, 'John', 'Doe', 'john@doe.com', '5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8', 0),
-(6, 'Jane', 'Doe', 'jane@doe.com', '5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8', 1);
+INSERT INTO `users` (`id`, `avatar`, `first`, `last`, `email`, `password`, `status`) VALUES
+(1, '1053183.png', 'Valentin', 'Dumitrescu', 'vali@vali.com', '$2y$10$J2Pc/CJSznzfVx8H5StdnehPpLnKNNM/vjCtomXDtiFJgr6pB.Co2', 1),
+(2, '9737878.png', 'Alan', 'Quandt', 'alan@alan.com', '$2y$10$OfZBThkgAtWrckR5c9RABevMAUxCNBxp.wNEuB.fra3Z1jN3zI9WC', 1);
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `navigation`
+--
+ALTER TABLE `navigation`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `posts`
+--
+ALTER TABLE `posts`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `user` (`user`),
+  ADD KEY `type` (`type`);
+
+--
+-- Indexes for table `post_types`
+--
+ALTER TABLE `post_types`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `settings`
+--
+ALTER TABLE `settings`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `navigation`
+--
+ALTER TABLE `navigation`
+  MODIFY `id` mediumint(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `posts`
+--
+ALTER TABLE `posts`
+  MODIFY `id` mediumint(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `post_types`
+--
+ALTER TABLE `post_types`
+  MODIFY `id` mediumint(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` mediumint(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

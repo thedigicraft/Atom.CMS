@@ -2,17 +2,14 @@
 
 function nav_main($dbc, $pageid) {
 	
-	$q = "SELECT * FROM pages";
-	$r = mysqli_query($dbc, $q);
-	
-	while($nav = mysqli_fetch_assoc($r)) { ?>	
+	$stmt = pdo($dbc, "SELECT * FROM navigation ORDER BY position ASC");
 
-		<li<?php if($pageid == $nav['id']) { echo ' class="active"'; } ?>><a href="?page=<?php echo $nav['id']; ?>"><?php echo $nav['label']; ?></a></li>
+	while($nav = $stmt->fetch()) { ?>	
+
+		<li<?php if($pageid == $nav['id']) { echo ' class="active"'; } ?>><a href="?page=<?php echo escape_html($nav['id']); ?>"><?php echo escape_html($nav['label']); ?></a></li>
 
 	<?php }
 	
 }
-
-
 
 ?>

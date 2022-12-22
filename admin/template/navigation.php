@@ -1,9 +1,4 @@
-<nav class="navbar navbar-default" role="navigation">
-	
-
-	
-	
-		
+<nav class="navbar navbar-default" role="navigation">	
 		<ul class="nav navbar-nav">
 
 			<li><a href="?page=dashboard">Dashboard</a></li>
@@ -24,9 +19,12 @@
 				</li>	
 				
 				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $user['fullname']; ?> <b class="caret"></b></a>
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo escape_html($user['fullname']); ?> <b class="caret"></b></a>
 					<ul class="dropdown-menu">
-						<li><a href="logout.php">Logout</a></li>
+						<form method="POST" action="logout.php">
+							<li><button style="display: block; width: 100%;" class="btn btn-default">Logout</button></li>
+							<input type="hidden" name="token" value="<?php echo $_SESSION['token']; ?>" />
+						</form>
 					</ul>
 				</li>
 

@@ -7,7 +7,6 @@
 	</footer><!-- END footer -->
 
 	<?php if($debug == 1) { include('widgets/debug.php'); } ?>
-	
-</body>
 
+</body>
 </html>

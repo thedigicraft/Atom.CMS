@@ -3,25 +3,34 @@
 # Start Session:
 session_start();
 
-# Database Connection:
-include('../config/connection.php');
-
-if(!empty($_POST)&&$_SERVER["REQUEST_METHOD"]=="POST") {
-	
-	$q = "SELECT * FROM users WHERE email = '$_POST[email]' AND password = SHA1('$_POST[password]')";
-	$r = mysqli_query($dbc, $q);
-	
-	if(mysqli_num_rows($r) == 1) {
-		
-		$_SESSION['username'] = $_POST['email'];
-		header('Location: index.php');
-		
-	}
-	
-	
+if(empty($_SESSION['token'])) {
+	$_SESSION['token'] = bin2hex(random_bytes(32));
 }
 
+# Database Connection:
+include('../config/connection.php');
+include('functions/pdo.php');
 
+if($_SERVER["REQUEST_METHOD"] === 'POST') {
+
+	if (!empty($_POST['token'])) {
+    if (hash_equals($_SESSION['token'], $_POST['token'])) {
+			$stmt = pdo($dbc, "SELECT * FROM users WHERE email = :email", [
+				'email' => $_POST['email'],
+			]);
+				
+			$user = $stmt->fetch();
+			if(password_verify($_POST['password'], $user['password'])) {
+				$_SESSION['username'] = $_POST['email'];
+
+				// Renewing the token for preventing session fixation attack
+				$_SESSION['token'] = bin2hex(random_bytes(32));
+
+				header('Location: index.php?page=dashboard');	
+			}
+    } 
+}
+}
 ?>
 
 <!DOCTYPE html>
@@ -31,6 +40,7 @@ if(!empty($_POST)&&$_SERVER["REQUEST_METHOD"]=="POST") {
 
 	<title>Admin Login</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="images/atom.png" />
 
 	<?php include('config/css.php'); ?>
 	
@@ -77,7 +87,8 @@ if(!empty($_POST)&&$_SERVER["REQUEST_METHOD"]=="POST") {
 							    </label>
 							  </div>
 							  -->
-							  
+
+								<input type="hidden" name="token" value="<?php echo $_SESSION['token']; ?>" />
 							  <button type="submit" class="btn btn-default">Submit</button>
 							  
 							</form>

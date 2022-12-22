@@ -1,22 +1,25 @@
 <?php
 
-include('../../config/connection.php');
-	
-$id = $_GET['id'];	
-	
+session_start();
 
-$q = "DELETE FROM posts WHERE id = $id";
-$r = mysqli_query($dbc,$q);
+$headers = apache_request_headers();
 
-if($r) {
-	echo 'Page Deleted';
+if (isset($headers['CsrfToken']) && !empty($headers['CsrfToken'])) {
+	if (hash_equals($_SESSION['token'], $headers['CsrfToken'])) {
+		include('../../config/connection.php');
+		include('../functions/pdo.php');	
+		$id = $_POST['id'];	
+		$stmt = pdo($dbc, "DELETE FROM posts WHERE id = :id", [
+			'id' => $id
+		]);	
+		if($stmt) {
+			echo 'Page Deleted';
+		}
+	} else {
+			echo 'Error';	 
+	}
 } else {
-	
-	echo 'There was an error...<br>';
-	echo $q.'<br>';
-	echo mysqli_error($dbc);
-	
+	echo 'Error';
 }
-
 
 ?>
