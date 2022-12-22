@@ -5,8 +5,10 @@
 	
 <head>
 
-	<title><?php echo $page['title'].' | '.$site_title; ?></title>
+	<title><?php echo escape_html($page['title']).' | '.$site_title; ?></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link
+	<link rel="icon" type="image/png" href="images/atom.png">
 
 	<?php include('config/css.php'); ?>
 	

@@ -1,21 +1,30 @@
 
 <?php if(isset($opened['id'])) { ?>
 	<script>
-		
-		$(document).ready(function() {
-			
-			Dropzone.autoDiscover = false;
-			
-			var myDropzone = new Dropzone("#avatar-dropzone");
-			
-			myDropzone.on("success", function(file){
-				
-				$("#avatar").load("ajax/avatar.php?id=<?php echo $opened['id']; ?>");
-				
-			});
-	
-		});
-	
+		Dropzone.options.avatarDropzone = {
+			init() {
+				this.on('success', file => {
+					const dropEl = document.querySelector('#dropzone-message');
+					dropEl.style.marginTop = '15px';
+					dropEl.classList.add('alert','alert-success');
+					dropEl.textContent = 'File uploaded!';
+					$.ajaxSetup({
+						headers : {
+							CsrfToken: "<?php echo $_SESSION['token']; ?>"
+						}
+					});
+					$("#avatar").load("ajax/avatar.php" , {
+						id: "<?php echo $opened['id']; ?>"
+					});
+				});
+				this.on('error', (file, message) => {
+					const dropEl = document.querySelector('#dropzone-message');
+					dropEl.style.marginTop = '15px';
+					dropEl.classList.add('alert','alert-danger');
+					dropEl.textContent = message;
+				});
+			}
+		};
 	</script>
 <?php } ?>
 
@@ -33,18 +42,16 @@
 						
 		<?php 
 		
-			$q = "SELECT * FROM users ORDER BY last ASC";
-			$r = mysqli_query($dbc, $q);
+			$stmt = pdo($dbc, "SELECT * FROM users ORDER BY last ASC");
 		
-			while($list = mysqli_fetch_assoc($r)) { 
-			
+			while($list = $stmt->fetch()) { 
 				$list = data_user($dbc, $list['id']);
 				//$blurb = substr(strip_tags($page_list['body']), 0, 160);
 					
 			?>
 
-			<a class="list-group-item <?php selected($list['id'], $opened['id'], 'active'); ?>" href="index.php?page=users&id=<?php echo $list['id']; ?>">
-				<h4 class="list-group-item-heading"><?php echo $list['fullname_reverse']; ?></h4>
+			<a class="list-group-item <?php selected($list['id'], $opened['id'], 'active'); ?>" href="index.php?page=users&id=<?php echo escape_html($list['id']); ?>">
+				<h4 class="list-group-item-heading"><?php echo escape_html($list['fullname_reverse']); ?></h4>
 				<!--<p class="list-group-item-text"><?php //echo $blurb; ?></p>-->
 			</a>
 				
@@ -59,12 +66,12 @@
 
 		<?php if(isset($message)) { echo $message; } ?>
 		
-		<form action="index.php?page=users&id=<?php echo $opened['id']; ?>" method="post" role="form">
+		<form action="index.php?page=users&id=<?php echo escape_html($opened['id']); ?>" method="post" role="form">
 			
 			<div id="avatar">
 				<?php if($opened['avatar'] != ''){ ?>
 	
-					<div class="avatar-container" style="background-image: url('../uploads/<?php echo $opened['avatar']; ?>')"></div>
+					<div class="avatar-container" style="background-image: url('../uploads/<?php echo escape_html($opened['avatar']); ?>')"></div>
 	
 				<?php } ?>
 			</div>
@@ -72,21 +79,21 @@
 			<div class="form-group">
 				
 				<label for="first">First Name:</label>
-				<input class="form-control" type="text" name="first" id="first" value="<?php echo $opened['first']; ?>" placeholder="First Name" autocomplete="off">
+				<input class="form-control" type="text" name="first" id="first" value="<?php echo escape_html($opened['first']); ?>" placeholder="First Name" autocomplete="off">
 				
 			</div>
 			
 			<div class="form-group">
 				
 				<label for="last">Last Name:</label>
-				<input class="form-control" type="text" name="last" id="last" value="<?php echo $opened['last']; ?>" placeholder="Last Name" autocomplete="off">
+				<input class="form-control" type="text" name="last" id="last" value="<?php echo escape_html($opened['last']); ?>" placeholder="Last Name" autocomplete="off">
 				
 			</div>
 			
 			<div class="form-group">
 				
 				<label for="email">Email Address:</label>
-				<input class="form-control" type="text" name="email" id="email" value="<?php echo $opened['email']; ?>" placeholder="Email Address" autocomplete="off">
+				<input class="form-control" type="text" name="email" id="email" value="<?php echo escape_html($opened['email']); ?>" placeholder="Email Address" autocomplete="off">
 				
 			</div>						
 
@@ -119,18 +126,19 @@
 			<button type="submit" class="btn btn-default">Save</button>
 			<input type="hidden" name="submitted" value="1">
 			<?php if(isset($opened['id'])) { ?>
-				<input type="hidden" name="id" value="<?php echo $opened['id']; ?>">
+				<input type="hidden" name="id" value="<?php echo escape_html($opened['id']); ?>">
 			<?php } ?>
+			<input type="hidden" name="token" value="<?php echo $_SESSION['token']; ?>" />
 		</form>
 		
 		<?php if(isset($opened['id'])) { ?>
-			
-		<form action="uploads.php?id=<?php echo $opened['id']; ?>" class="dropzone" id="avatar-dropzone">
-			
+		<p id="dropzone-message"></p>
+		<form action="uploads.php" id="avatarDropzone" class="dropzone">
 			<input type="file" name="file">
-			
+			<input type="hidden" name="id-a" value="<?php echo escape_html($opened['id']); ?>" />
+			<input type="hidden" name="token-a" value="<?php echo $_SESSION['token']; ?>" />
 		</form>
-		
+
 		<?php } ?>
 		
 	</div>

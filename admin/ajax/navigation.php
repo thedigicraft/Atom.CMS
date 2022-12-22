@@ -1,23 +1,31 @@
 <?php
 
-include('../../config/connection.php');
+session_start();
 
-$label = mysqli_real_escape_string($dbc, $_POST['label']);
-$url = mysqli_real_escape_string($dbc, $_POST['url']);
+$headers = apache_request_headers();
 
-$q = "UPDATE navigation SET id = '$_POST[id]', label = '$label', url = '$url', status = $_POST[status] WHERE id = '$_POST[openedid]'";
-$r = mysqli_query($dbc, $q);
+if (isset($headers['CsrfToken']) && !empty($headers['CsrfToken'])) {
+	if (hash_equals($_SESSION['token'], $headers['CsrfToken'])) {
+		
+		include('../../config/connection.php');
+		include('../functions/pdo.php');	
+		$stmt = pdo($dbc, "UPDATE navigation SET id = :id, label = :label, url = :url, status = :status WHERE id = :openedid", [
+			'id' => $_POST['id'],
+			'label' => $_POST['label'],
+			'url' => $_POST['url'],
+			'status' => $_POST['status'],
+			'openedid' => $_POST['openedid']
+		]);	
+		
+		if($stmt){
+			echo 'Saved<br>';
+		} 
 
-if($r){
-	
-	echo 'Saved<br>'.$q;
-	
-	
+	} else {
+			echo 'Error';	 
+	}
 } else {
-	
-	echo mysqli_error($dbc).'<br>'.$q;
-
+	echo 'Error';
 }
-
 
 ?>

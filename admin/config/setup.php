@@ -10,14 +10,17 @@ include('../config/connection.php');
 DEFINE('D_TEMPLATE', 'template');
 
 # Functions:
+include('functions/pdo.php');
+include('functions/sanitize_html.php');
 include('functions/data.php');
 include('functions/template.php');
 include('functions/sandbox.php');
+include('htmlpurifier-4.15.0/library/HTMLPurifier.auto.php');
 
 # Site Setup:
 $debug = data_setting_value($dbc, 'debug-status');
 
-$site_title = 'AtomCMS 2.0';
+$site_title = 'AtomCMS 2.1';
 
 if(isset($_GET['page'])) {
 	
@@ -32,12 +35,7 @@ if(isset($_GET['page'])) {
 # Page Setup:
 include('config/queries.php');
 
-
-
-
-
 # User Setup:
 $user = data_user($dbc, $_SESSION['username']);
-
 
 ?>
