@@ -28,7 +28,7 @@ if (!empty($_POST['token-a'])) {
     $file_ext = strtolower($file_ext);
 
     $finfo = finfo_open(FILEINFO_MIME_TYPE);
-    $mime = @finfo_file($finfo, $file_tmp_name);
+    $mime = finfo_file($finfo, $file_tmp_name);
     finfo_close($finfo);
 
   $stmt = pdo($dbc, "SELECT avatar FROM users WHERE id = :id", [
