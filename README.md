@@ -10,8 +10,10 @@ Tested on PHP 7.4
  - You need to have PHP-GD library enabled
  - Import database.sql
  - Move the project to your server's path
+ - Change the SITE_DOMAIN constant in config/setup.php if needed 
 
 ## Default users and passwords:
+### Use stronger passwords than these 
 username: alan@alan.com
 password: password
 
