@@ -17,3 +17,6 @@ password: password
 
 username: vali@vali.com
 password: password
+
+### Icon used in the browser's tab:
+<a href="https://www.flaticon.com/free-icons/atom" title="atom icons">Atom icons created by Freepik - Flaticon</a>
