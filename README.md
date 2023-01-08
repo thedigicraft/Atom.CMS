@@ -12,13 +12,14 @@ The AtomCMS was created for learning purposes.  The Digital Craft relies solely 
 
 ## News
 
-| Date | Message |
-| - | - |
-| 22-12-2022 | An updated version of AtomCMS 2.0 has been uploaded to the branch "AtomCMS-2.1". The new branch contains security patches for web application vulnerabilities. <br>  More informations about the web application vulnerabilities found in AtomCMS-2.0 here: https://v-dumitrescu.github.io/atomcms2.0-security/ |
-| 5-17-2014 | We have launched a crowd funding campaign to help us continue making videos that are free for everyone to watch.  Please check out the fundraising page here.  http://indiegogo.com/projects/the-digital-craft-needs-an-upgrade We really really need your support! Thanks for watching! |
-| 5-15-2014 | We have created a "project status" page that lets you see what new features/videos are planning to add.  You can see what we are working on currently, what is next, and what has been completed.  This list is built from users requests and our own ideas for additions. http://www.thedigitalcraft.com/projects/  <br> To suggest more features please visit our Facebook page and leave a comment! http://facebook.com/thedigicraft We really really need your support! Thanks for watching!
-| 5-14-2014 | We had taken a break from recording but we are back.  I just updated the video list below to include all current videos up to video #72. Thanks for watching! |
-| 12-31-2013 | We have started our AtomCMS new series title Developing A Dynamic Website 2014. This [YouTube playlist](http://www.youtube.com/playlist?list=PLAkMqlQoeMeiwvNWpe3mhgQxAa1jiGwmt) has all of the videos that have been created to date. |
+| Date | Author |  Message |
+| - | - | - |
+| 01-08-2023 | [ thedigicraft ](https://github.com/thedigicraft) | I want to give a special thanks to [ v-dumitrescu ](https://github.com/v-dumitrescu) for volunteering to make the security updates to Atom.   His work has inspired me to Dockerize Atom and I will update everyone when that is ready! |
+| 22-12-2022 | [ v-dumitrescu ](https://github.com/v-dumitrescu) | An updated version of AtomCMS 2.0 has been uploaded to the branch "AtomCMS-2.1". The new branch contains security patches for web application vulnerabilities. <br>  More informations about the web application vulnerabilities found in AtomCMS-2.0 here: https://v-dumitrescu.github.io/atomcms2.0-security/ |
+| 5-17-2014 | [ thedigicraft ](https://github.com/thedigicraft) | We have launched a crowd funding campaign to help us continue making videos that are free for everyone to watch.  Please check out the fundraising page here.  http://indiegogo.com/projects/the-digital-craft-needs-an-upgrade We really really need your support! Thanks for watching! |
+| 5-15-2014 | [ thedigicraft ](https://github.com/thedigicraft) | We have created a "project status" page that lets you see what new features/videos are planning to add.  You can see what we are working on currently, what is next, and what has been completed.  This list is built from users requests and our own ideas for additions. http://www.thedigitalcraft.com/projects/  <br> To suggest more features please visit our Facebook page and leave a comment! http://facebook.com/thedigicraft We really really need your support! Thanks for watching!
+| 5-14-2014 | [ thedigicraft ](https://github.com/thedigicraft) | We had taken a break from recording but we are back.  I just updated the video list below to include all current videos up to video #72. Thanks for watching! |
+| 12-31-2013 | [ thedigicraft ](https://github.com/thedigicraft) | We have started our AtomCMS new series title Developing A Dynamic Website 2014. This [YouTube playlist](http://www.youtube.com/playlist?list=PLAkMqlQoeMeiwvNWpe3mhgQxAa1jiGwmt) has all of the videos that have been created to date. |
 
 
 
