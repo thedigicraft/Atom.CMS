@@ -2,7 +2,7 @@ AtomCMS 2.1
 =========================
 
 This branch contains web application security practices and can be used in production.
-More information about web application attacks and patching can be found here: https://v-dumitrescu.github.io/atomcms2.0-security/
+More informations about web application attacks and their respective patching methods in AtomCMS can be found here: https://v-dumitrescu.github.io/atomcms2.0-security/
 
 Tested on PHP 7.4 with LAMP
 
